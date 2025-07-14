@@ -34,21 +34,19 @@ const Viewn = () => {
                                 (value, index) => {
                                     return (
 
-
                                         <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                                             <div class="card h-100" >
                                                 <img src={value.urlToImage} class="card-img-top" alt="..."></img>
                                                 <div class="card-body">
                                                     <h5 class="card-title">{value.title}</h5>
                                                     <p class="card-text">{value.description}</p>
-                                                    <a href={value.url} class="btn btn-primary">Detailed News</a>
+                                                    <a href={value.url} target="_blank" class="btn btn-primary">Detailed News</a>
                                                 </div>
                                             </div>
                                         </div>
                                     )
                                 }
                             )}
-
 
                         </div>
                     </div>
